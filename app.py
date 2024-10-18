@@ -294,7 +294,7 @@ def generate_text(course):
 
 
 def generate_module_content(course_name,module_name):
-    palm.configure(api_key="AIzaSyAWMEx0ByKdMqvuWQSN4uBGNmvfyX88Fw0")
+    palm.configure(api_key=" ")
     models = [
         m for m in palm.list_models()
         if 'generateText' in m.supported_generation_methods
