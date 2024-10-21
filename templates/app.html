@@ -12,13 +12,13 @@
         <nav>
             <!-- Navigation links -->
             <ul>
-                {% if current_user.is_authenticated %}
+                {%- if current_user.is_authenticated -%}
                     <li><a href="{{ url_for('dashboard') }}">User Profile</a></li>
                     <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                {% else %}
+                {%- else -%}
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('signup')}}">Sign Up</a></li>
-                {% endif %}
+                {%- endif -%}
                 <li><a href="#content-recommendation">Content Recommendation</a></li>
                 <li><a href="#lesson-generation">Lesson Generation</a></li>
                 <li><a href="#assessments">Assessments</a></li>
